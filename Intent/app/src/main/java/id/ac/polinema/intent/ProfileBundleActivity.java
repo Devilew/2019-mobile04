@@ -26,7 +26,7 @@ public class ProfileBundleActivity extends AppCompatActivity {
             // TODO: display value here
             usernameTeks.setText(extras.getString("username"));
             nameTeks.setText(extras.getString("name"));
-            ageTeks.setText(extras.getString("age"));
+            ageTeks.setText(String.valueOf(getIntent().getIntExtra("age",0)));
         }
     }
 }
